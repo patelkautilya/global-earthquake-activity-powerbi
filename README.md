@@ -6,7 +6,13 @@ An event-level analysis of **USGS Earthquake Catalog earthquakes of magnitude 5.
 
 ## Dashboard
 
-Power BI report and exported preview links will be added after the report is built and checked.
+- [Open the two-page interactive Power BI report](https://app.powerbi.com/groups/e6426da3-9b36-4519-acf1-2434daa552ae/reports/f5d7813e-c802-4dcf-ba0d-9a195ac525c2/92b72c5f08282bbbb3aa?experience=power-bi) (Power BI sign-in may be required)
+- [Download the two-page PDF export](global-earthquake-powerbi-report.pdf)
+- [KPI and monthly trend preview](earthquake-final-1.png) · [depth and global map preview](earthquake-final-2.png)
+
+The **KPI & Monthly Trend** page combines event count, maximum preferred magnitude, median depth, a monthly line chart with year-to-quarter-to-month drill hierarchy, and magnitude-band and year slicers. The **Depth & Global Map** page uses a depth-band comparison and an interactive coordinate map colored by magnitude band. The report uses Power BI's Divergent palette.
+
+Validation in the saved report: the unfiltered event KPI displays **3,636**; selecting `M7+` changes it to **26**, matching the independent CSV calculation. The exported PDF was checked page by page for visible chart values and map rendering. The PDF is a static snapshot; the filters and drill controls are available in the Power BI report.
 
 ## Questions and findings
 
@@ -41,3 +47,4 @@ Validation performed for this snapshot:
 Public API extraction, data validation, documented transformation, reproducible Python, KPI definition, Power BI report design, filter and drill interaction, and honest interpretation of observational data.
 
 Credit: U.S. Geological Survey.
+
